@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#fondo_header_footer{
+    background-color: rgb(146, 32, 32);   
+}
+
+#menu{
+    margin: 5px;
+}
