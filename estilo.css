@@ -8,5 +8,26 @@
 }
 
 #menu{
-    margin: 5px;
+    margin-top: 10px;
 }
+
+#tarjetas_juegos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#juego_rodando_titulo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#juego_rodando_cuerpo{
+    margin-top: 5px;
+}
+
+.juego_rodando_imagenes{
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+ }
