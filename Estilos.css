@@ -1,0 +1,61 @@
+.Resolucion {
+    width: 99%;
+    text-align: center;
+}
+
+/* Estilos para pantallas de computadora */
+@media (min-width: 991px) {
+    /* Mostrar el HTML de Compu */
+    .Computadora {
+        display: block;
+    }
+    /* Ocultar el HTML de Celu */
+    .Celular {
+        display: none;
+    }
+}
+/* Estilos para pantallas de celular */
+@media (max-width: 767px) {
+    /* Mostrar el HTML de Celu */
+    .Celular {
+        display: block;
+    }
+    /* Ocultar el HTML de Compu */
+    .Computadora {
+        display: none;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#fondo_header_footer{
+    background-color: rgb(146, 32, 32);
+}
+
+#menu{
+    margin-top: 10px;
+}
+
+#tarjetas_juegos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#juego_rodando_titulo{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#juego_rodando_cuerpo{
+    margin-top: 5px;
+}
+
+.juego_rodando_imagenes{
+    width: 60%;
+    height: auto;
+    margin-bottom: 10px;
+}
