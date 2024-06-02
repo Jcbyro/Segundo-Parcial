@@ -120,12 +120,155 @@ function pag_col_legajo_decision_trabajo() {
     document.getElementById("puntaje_juego_rodando").innerHTML =
     "Tu puntaje es: " + puntaje;
 
- //   document.getElementById("imagen_juego_rodando").src =
- //   "img/juego-rodando-auto-colectivo.png"
+    document.getElementById("imagen_juego_rodando").src =
+    "img/juego-rodando-auto-rampa.png"
 
     document.getElementById("texto_juego_rodando").innerHTML =
-    "Llegaste a tu trabajo."
+    "Llegaste a tu trabajo. Tienes que rodar 2 cuadras para llegar. <br> <br>Pero al recorrer una cuadra y llegar a la ezquina, notas que un auto se encuentra estacionado bloqueando la rampa de la vereda. ¿Qué decides hacer? Retroceder la cuadra que habías recorrido para cruzar a la calle de enfrente o intentar bajar por el cordón de la vereda."
 
     document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_col_legajo_decision_trabajo)    
     document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_col_legajo_decision_trabajo)
+
+    document.getElementById("boton_op1_juego_rodando").innerHTML =
+    "Retroceder una cuadra"
+    document.getElementById("boton_op1_juego_rodando").addEventListener("click", pag_trabajo_decision_retoceder)
+
+    document.getElementById("boton_op2_juego_rodando").innerHTML =
+    "Bajar por el cordón"
+    document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_trabajo_decision_bajar)
+}
+
+function pag_trabajo_decision_retoceder() {
+    puntaje = puntaje + 10;
+    document.getElementById("puntaje_juego_rodando").innerHTML =
+    "Tu puntaje es: " + puntaje;
+
+    document.getElementById("imagen_juego_rodando").src =
+    "img/juego-rodando-trabajo.png"
+
+    document.getElementById("texto_juego_rodando").innerHTML =
+    "Decidiste retroceder. Muy buena decisión, no es seguro que una persona en silla de ruedas baje sin asistencia por el cordón de la vereda. <br> <br> Retrocediste y cruzaste la calle, afortunadamente no te encontraste con ningún obstáculo adicional y pudiste llegar a tu trabajo. <br> <br>Ya está terminando la jornada laboral y tus compañeros están hablando de ir todos juntos a cenar por allí cerca a un nuevo restaurante con buenas recomendaciones. ¿Qué decides hacer? Aceptas la invitación o Preguntas sobre el lugar primero."
+
+    document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_trabajo_decision_retoceder)    
+    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_trabajo_decision_bajar)
+
+    document.getElementById("boton_op1_juego_rodando").innerHTML =
+    "Aceptar Invitación"
+    document.getElementById("boton_op1_juego_rodando").addEventListener("click", pag_trabajo_aceptar_invitacion)
+
+    document.getElementById("boton_op2_juego_rodando").innerHTML =
+    "Preguntar por el lugar"
+    document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_trabajo_preguntar)
+}
+
+function pag_trabajo_decision_bajar() {
+    puntaje = puntaje - 10;
+    document.getElementById("puntaje_juego_rodando").innerHTML =
+    "Tu puntaje es: " + puntaje;
+
+    document.getElementById("imagen_juego_rodando").src =
+    "img/juego-rodando-trabajo.png"
+
+    document.getElementById("texto_juego_rodando").innerHTML =
+    "Decidiste bajar por el cordón. Te pones de espalda al cordón y lentamente vas retrocediendo, pero por el mal estado de la calle una de tus ruedas cae en un pozo y la silla se inclina hacia la derecha. Afortunadamente una persona que estaba cerca llego a sostenerte y evitar que caigas de la silla.  Luego del susto de aquella situación, cruzaste la calle y lograste llegar a tu trabajo. <br> <br>Ya está terminando la jornada laboral y tus compañeros están hablando de ir todos juntos a cenar por allí cerca a un nuevo restaurante con buenas recomendaciones. ¿Qué decides hacer? Aceptas la invitación o Preguntas sobre el lugar primero."
+
+    document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_trabajo_decision_retoceder)    
+    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_trabajo_decision_bajar)
+
+    document.getElementById("boton_op1_juego_rodando").innerHTML =
+    "Aceptar Invitación"
+    document.getElementById("boton_op1_juego_rodando").addEventListener("click", pag_trabajo_aceptar_invitacion)
+
+    document.getElementById("boton_op2_juego_rodando").innerHTML =
+    "Preguntar por el lugar"
+    document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_trabajo_preguntar)
+}
+
+function pag_trabajo_aceptar_invitacion() {
+    puntaje = puntaje - 10;
+    document.getElementById("puntaje_juego_rodando").innerHTML =
+    "Tu puntaje es: " + puntaje;
+
+    document.getElementById("imagen_juego_rodando").src =
+    "img/juego-rodando-trabajo-invitacion.png"
+
+    document.getElementById("texto_juego_rodando").innerHTML =
+    "Decidiste aceptar la invitación y al terminar de trabajar fuiste con tus compañeros hasta el lugar. <br> <br>Lamentablemente tus compañeros de trabajo no tuvieron en cuenta la accesibilidad del lugar y ahora estás frente a una gran cantidad de escalones para entrar. ¿Qué decides hacer? Proponer cambiar de restaurante o irte a tu casa."
+
+    document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_invitacion)    
+    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_preguntar)
+
+    document.getElementById("boton_op1_juego_rodando").innerHTML =
+    "Cambiar de lugar"
+    document.getElementById("boton_op1_juego_rodando").addEventListener("click", pag_restaurante_cambiar_lugar)
+
+    document.getElementById("boton_op2_juego_rodando").innerHTML =
+    "Ir a casa"
+    document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_restaurante_ir_a_casa)
+}
+
+function pag_trabajo_preguntar() {
+    puntaje = puntaje + 10;
+    document.getElementById("puntaje_juego_rodando").innerHTML =
+    "Tu puntaje es: " + puntaje;
+
+    document.getElementById("imagen_juego_rodando").src =
+    "img/juego-rodando-restaurante.png"
+
+    document.getElementById("texto_juego_rodando").innerHTML =
+    "Decidiste preguntar por datos del lugar. Excelente, siempre hay que verificar que los lugares a los que quieres ir sean accesibles.  Buscando por google maps descubres que el restaurante tenía una gran escalera para ingresar. Pero encuentran un lugar muy bueno al cual ir cerca de allí. Luego de la cena, ya está todo listo para regresar a casa."
+
+    document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_invitacion)    
+    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_trabajo_preguntar)
+
+    document.getElementById("boton_op1_juego_rodando").innerHTML =
+    "Ir a casa"
+    document.getElementById("boton_op1_juego_rodando").addEventListener("click", pag_restaurante_ir_a_casa)
+
+    document.getElementById("boton_op2_juego_rodando").innerHTML =
+    "Ir a casa"
+    document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_restaurante_ir_a_casa)
+}
+
+function pag_restaurante_cambiar_lugar() {
+    puntaje = puntaje + 5;
+    document.getElementById("puntaje_juego_rodando").innerHTML =
+    "Tu puntaje es: " + puntaje;
+
+    document.getElementById("imagen_juego_rodando").src =
+    "img/juego-rodando-restaurante.png"
+
+    document.getElementById("texto_juego_rodando").innerHTML =
+    "Tu y tus compañeros comienzan a buscar un lugar nuevo y afortunadamente encuentran uno no muy lejos de donde están. <br> <br> Luego de la cena, ya está todo listo para regresar a casa."
+
+    document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_restaurante_cambiar_lugar)    
+    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_restaurante_ir_a_casa)
+
+    document.getElementById("boton_op1_juego_rodando").innerHTML =
+    "Ir a casa"
+    document.getElementById("boton_op1_juego_rodando").addEventListener("click", pag_restaurante_ir_a_casa)
+
+    document.getElementById("boton_op2_juego_rodando").innerHTML =
+    "Ir a casa"
+    document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_restaurante_ir_a_casa)
+}
+
+function pag_restaurante_ir_a_casa() {
+    document.getElementById("puntaje_juego_rodando").innerHTML =
+    "Tu puntaje es: " + puntaje;
+
+    document.getElementById("imagen_juego_rodando").src =
+    "img/juego-rodando-inicio.jpg"
+
+    document.getElementById("texto_juego_rodando").innerHTML =
+    "Estas en tu casa"
+
+    document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_preguntar)    
+    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_preguntar)
+
+    document.getElementById("boton_op1_juego_rodando").innerHTML =
+    "Muchas gracias"
+
+    document.getElementById("boton_op2_juego_rodando").innerHTML =
+    "Muchas gracias"
 }
