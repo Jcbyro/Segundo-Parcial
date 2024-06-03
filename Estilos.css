@@ -333,3 +333,7 @@ body {
     font-size: 20px;
     font-family: "sourcesanspro";
 }
+
+.a {
+    justify-content: center;
+}
