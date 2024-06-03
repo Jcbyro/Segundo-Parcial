@@ -1,10 +1,10 @@
 .Resolucion {
-    width: 99%;
+    width: 100%;
     text-align: center;
 }
 
 /* Estilos para pantallas de computadora */
-@media (min-width: 991px) {
+@media (min-width: 768px) {
     /* Mostrar el HTML de Compu */
     .Computadora {
         display: block;
@@ -26,9 +26,35 @@
     }
 }
 
+@font-face {
+    font-family: 'sourcesanspro';
+    font-style: normal;
+    font-weight: 400;
+    font-style: block;
+    src: url(https://design.penpot.app/fonts/sourcesanspro-regular.woff) format('woff');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.text-node { background-clip: text !important; -webkit-background-clip: text !important; }
+
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 #fondo_header_footer{
@@ -58,4 +84,254 @@
     width: 60%;
     height: auto;
     margin-bottom: 10px;
+}
+
+/* Home */
+.diapositiva {
+    width: 400px;
+    height: 766px;
+    background: #FFFFFF;
+}
+
+.rectangulo-bordes {
+    background: rgb(146, 32, 32);
+}
+
+/* Texto Segundo Parcial */
+.titulo {
+    position: absolute;
+    left: 60px;
+    top: 6px;
+    height: 65px;
+    display: flex;
+    white-space: break-spaces;
+    align-items: center;
+    font-size: 40px;
+    font-family: "sourcesanspro";
+    color: black;
+}
+
+/* UADE */
+.UADE {
+    position: absolute;
+    left: 39px;
+    top: 116px;
+    width: 322px;
+    height: 123px;
+    background: url(https://design.penpot.app/assets/by-file-media-id/bbe43b4e-755c-815c-8004-7064dacdbb8f) no-repeat center center / cover;
+}
+
+/* Nombre de la materia - Nro de grupo - Cruso */
+.texto-home {
+    position: absolute;
+    left: 110px;
+    top: 311px;
+    display: flex;
+    font-size: 18px;
+    font-family: "sourcesanspro";
+}
+
+/* Botones Link */
+.group {
+    position: absolute;
+}
+
+.rectangle-home {
+    height: 100%;
+    background: white;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "sourcesanspro";
+    font-size: 22px;
+    color: black;
+}
+
+.home {
+    left: 31px;
+    top: 522px;
+    width: 79px;
+    height: 38px;
+}
+
+.integrantes {
+    left: 246px;
+    top: 522px;
+    width: 123px;
+    height: 38px;
+}
+
+.avances {
+    left: 20px;
+    top: 590px;
+    width: 102px;
+    height: 38px;
+}
+
+.juegos {
+    left: 262px;
+    top: 590px;
+    width: 91px;
+    height: 38px;
+}
+
+/* Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024 */
+.footer {
+    position: absolute;
+    left: 0px;
+    top: 667px;
+    width: 400px;
+    height: 99px;
+}
+
+.texto_final {
+    position: absolute;
+    left: 21px;
+    top: 12px;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: start;
+    color: black;
+    font-family: "sourcesanspro";
+}
+
+/* Foto: Juan Byro */
+.Juan_Byro {
+    position: absolute;
+    left: 17px;
+    top: 86px;
+    width: 94px;
+    height: 130px;
+    background: url(https://design.penpot.app/assets/by-file-media-id/782e7344-abf7-811d-8004-70a422db6e3c) no-repeat center center / cover;
+    border-radius: 5px;
+}
+
+/* Texto: Juan Byro */
+.text-block {
+    position: absolute;
+}
+
+.text-titulo {
+    font-family: "sourcesanspro", sans-serif;
+    font-size: 22px;
+}
+
+.text-link {
+    font-family: "sourcesanspro", sans-serif;
+    font-size: 12px;
+}
+
+/* Foto: Dj Barchiesi */
+.Dj_Barchiesi {
+    position: absolute;
+    left: 251px;
+    top: 239px;
+    width: 129px;
+    height: 146px;
+    background: url(https://design.penpot.app/assets/by-file-media-id/bbe43b4e-755c-815c-8004-7244620ec45e) no-repeat center center / cover;
+    border-radius: 5px;
+}
+
+/* Estilos generales */
+.text {
+    font-size: 20px;
+}
+
+.juego-container {
+    position: relative;
+    width: 360px;
+    height: 175px;
+    left: 20px;
+}
+
+.titulo-juego {
+    left: 112px;
+    top: 16px;
+    width: 136px;
+    height: 24px;
+    font-weight: bold;
+}
+
+.description-juego {
+    top: 50px;
+    width: 100%;
+    height: 76px;
+    text-align: center;
+}
+
+.link-juego {
+    left: 127px;
+    top: 140px;
+    width: 106px;
+    height: 25px;
+    color: blue;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* Estilos para los elementos específicos */
+.rectangle {
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #787878;
+    border-radius: 5px;
+}
+
+.shape {
+    position: absolute;
+}
+
+.titulo_avances {
+    left: 114px;
+    top: 47px;
+    width: 171px;
+    height: 30px;
+    font-weight: bold;
+    font-family: "sourcesanspro", sans-serif;
+    font-size: 22px;
+    line-height: 1.2;
+    white-space: break-spaces;
+}
+
+.descripcion_avances {
+    font-family: "sourcesanspro";
+    font-size: 22px;
+    line-height: 1.2;
+    position: absolute;
+    left: 15px;
+    width: 367px;
+}
+
+.group-link-SP {
+    position: absolute;
+    left: 122px;
+    top: 461px;
+    width: 157px;
+    height: 38px;
+}
+
+.shape-link-SP {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.rect {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.text-link-SP {
+    justify-content: center;
+    font-size: 20px;
+    font-family: "sourcesanspro";
 }

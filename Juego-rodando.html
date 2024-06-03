@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Segundo Parcial </title>
         <link rel="stylesheet" href="Estilos.css">
+        <script src="juego-rodando.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
@@ -52,28 +53,23 @@
                             <div class="col-md-12 col-sm-12 col-lg-12" id="juego_rodando_titulo">
                                 <h2> Un dia Rodando </h2>
                             </div>
-
                             <div class="col-md-12 col-sm-12 col-lg-12" id="juego_rodando_titulo">
-                                <h2 id="puntaje"></h2>
+                                <h2 id="puntaje_juego_rodando"> </h2>
                             </div>
-
-                            <div class="col-md-6 col-sm-6 col-lg-6 " id="juego_rodando_cuerpo">
-                                <p> ¡Bienvenidos! </p> 
-                                <p> En este juego simularemos un día en la vida de una persona que se traslada en silla de ruedas donde se deberán tomar decisiones sobre acciones cotidianas y se dará puntaje acorde a si la opción seleccionada es la mejor o no. </p>
+                            <div class="col-md-6 col-sm-6 col-lg-6 " id="texto_juego juego_rodando_cuerpo">
+                                <p id= "texto_juego_rodando"></p> 
                             </div>
-
                             <div class="col-md-6 col-sm-6 col-lg-6 nav justify-content-center" id="juego_rodando_cuerpo">
-                                <img class="juego_rodando_imagenes" src="img/juego-rodando-inicio.jpg">
+                                <img id= "imagen_juego_rodando" class="juego_rodando_imagenes" src="img/juego-rodando-inicio.jpg">
                             </div>
 
                             <div class="col-md-6 col-sm-6 col-lg-6">
                                 <ul class="nav nav-pills nav-fill">
                                     <li class="nav-item">
-                                        <a href=""><button class="btn btn-outline-dark" onclick="incrementar_Puntaje_inicial_1()"><h3> Opcion1 </h3></button></a>
+                                        <a href="#"> <button id="boton_op1_juego_rodando" style="margin-bottom: 10px;" class="btn btn-outline-dark"> <h4> Despertar 6.00am </h4></button></a>
                                     </li>
-
                                     <li class="nav-item">
-                                        <a href=""><button class="btn btn-outline-dark"><h3> Opcion2 </h3></button></a>
+                                        <a href="#"> <button id="boton_op2_juego_rodando" style="margin-bottom: 10px;" class="btn btn-outline-dark"> <h4> Despertar 7.30am </h4></button></a>
                                     </li>
                                 </ul>
                             </div>
@@ -84,21 +80,21 @@
                 <footer>
                     <div class="container p-2 text-black bg-opacity-50" id="fondo_header_footer">
                         <div class="row">
-                            <p><strong> Pie de Pagina </strong></p>
+                            <p><strong>Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024</strong></p>
                         </div>
                     </div> 
                 </footer>
 
                 <script>
+                    document.getElementById("texto_juego_rodando").innerHTML =
+                    "¡Bienvenidos! <br> <br> En este juego simularemos un día en la vida de una persona que se traslada en silla de ruedas donde se deberán tomar decisiones sobre acciones cotidianas y se dará puntaje acorde a si la opción seleccionada es la mejor o no. <br> <br> ... Comenzamos. <br> Es lunes por la mañana de un día frío de invierno. Trabajas en una oficina y tu horario es de 9 a 17 hs. Para llegar allí, utilizas el transporte público, el recorrido suele durar 1 hs. Tienes que decidir si despertar a las 6am para salir temprano y así llegar con tiempo evitando la hora pico o despertar a las 7.30hs, pudiendo así descansar más, llegando justo a tiempo para el trabajo."
+            
                     var puntaje = 0;
-                    document.getElementById("puntaje").innerHTML =
+                    document.getElementById("puntaje_juego_rodando").innerHTML =
                     "Tu puntaje es: " + puntaje;
-
-                    function incrementar_Puntaje_inicial_1() {
-                        puntaje++;
-                        document.getElementById("puntaje").innerHTML =
-                        "Tu puntaje es: " + puntaje;
-                    }
+            
+                    document.getElementById("boton_op1_juego_rodando").addEventListener("click", pag_ini_decision_6am)
+                    document.getElementById("boton_op2_juego_rodando").addEventListener("click", pag_ini_decision_730am)
                 </script>
             </div>
             <!-- Celular -->
