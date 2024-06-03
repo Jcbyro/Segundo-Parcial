@@ -100,12 +100,9 @@ body {
 /* Texto Segundo Parcial */
 .titulo {
     position: absolute;
-    left: 60px;
-    top: 6px;
+    left: 70px;
+    top: 2px;
     height: 65px;
-    display: flex;
-    white-space: break-spaces;
-    align-items: center;
     font-size: 40px;
     font-family: "sourcesanspro";
     color: black;
@@ -118,7 +115,6 @@ body {
     top: 116px;
     width: 322px;
     height: 123px;
-    background: url(https://design.penpot.app/assets/by-file-media-id/bbe43b4e-755c-815c-8004-7064dacdbb8f) no-repeat center center / cover;
 }
 
 /* Nombre de la materia - Nro de grupo - Cruso */
@@ -330,4 +326,13 @@ body {
     justify-content: center;
     font-size: 20px;
     font-family: "sourcesanspro";
+}
+
+#escenario { 
+    max-width: 600px; 
+    margin: auto; 
+    padding: 20px; 
+}
+.decision { 
+    margin: 10px;
 }
