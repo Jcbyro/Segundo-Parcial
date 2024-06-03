@@ -196,7 +196,7 @@ function pag_trabajo_aceptar_invitacion() {
     "Decidiste aceptar la invitación y al terminar de trabajar fuiste con tus compañeros hasta el lugar. <br> <br>Lamentablemente tus compañeros de trabajo no tuvieron en cuenta la accesibilidad del lugar y ahora estás frente a una gran cantidad de escalones para entrar. ¿Qué decides hacer? Proponer cambiar de restaurante o irte a tu casa."
 
     document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_invitacion)    
-    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_preguntar)
+    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_trabajo_preguntar)
 
     document.getElementById("boton_op1_juego_rodando").innerHTML =
     "Cambiar de lugar"
@@ -260,15 +260,22 @@ function pag_restaurante_ir_a_casa() {
     document.getElementById("imagen_juego_rodando").src =
     "img/juego-rodando-inicio.jpg"
 
-    document.getElementById("texto_juego_rodando").innerHTML =
-    "Estas en tu casa"
-
-    document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_preguntar)    
-    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_trabajo_aceptar_preguntar)
-
+    if(puntaje == 40) 
+        document.getElementById("texto_juego_rodando").innerHTML =
+        "<strong>¡PERFECTO!</strong> <br>Obtuviste el puntaje más alto posible. <br>Has tomado las decisiones correctas en las situaciones que se plantearon.  El objetivo de esta actividad es de mostrar las dificultades del día a día de una persona en silla de ruedas que pueden pasar desapercibidas para muchas personas. <br>Esto es solo una mínima porción de la realidad a la que se enfrentan. <br>¿Qué pasaría si no hay otra opción que tomar un colectivo desde la vereda y no es posible para el chofer acercarse al cordón? <br>¿O una calle no tiene rampa en sus equinas o las que tiene están rotas? <br>¿Cómo puede hacer una persona en silla de ruedas en esos casos?. <br><br>Estas con cuestiones que como sociedad deberíamos considerarlas para actuar en consecuencia y asegurar que todo, desde transporte, calles, accesos a lugares sean accesibles para todos."
+    else if(puntaje > 20)
+        document.getElementById("texto_juego_rodando").innerHTML =
+        "<strong>¡Muy Bien!</strong> <br>Obtuviste un buen puntaje. <br>Esperamos que este juego te haya ayudado a apreciar los desafíos que existen, pero quizás se nos pasan por alto. El objetivo de esta actividad es de mostrar las dificultades del día a día de una persona en silla de ruedas que pueden pasar desapercibidas para muchas personas. <br>Esto es solo una mínima porción de la realidad a la que se enfrentan. <br>¿Qué pasaría si no hay otra opción que tomar un colectivo desde la vereda y no es posible para el chofer acercarse al cordón? <br>¿O una calle no tiene rampa en sus equinas o las que tiene están rotas? <br>¿Cómo puede hacer una persona en silla de ruedas en esos casos?. <br><br>Estas con cuestiones que como sociedad deberíamos considerarlas para actuar en consecuencia y asegurar que todo, desde transporte, calles, accesos a lugares sean accesibles para todos."
+    else 
+        document.getElementById("texto_juego_rodando").innerHTML =
+        "Esperamos que este juego te haya ayudado a apreciar los desafíos que existen, pero quizás se nos pasan por alto. El objetivo de esta actividad es de mostrar las dificultades del día a día de una persona en silla de ruedas que pueden pasar desapercibidas para muchas personas. <br>Esto es solo una mínima porción de la realidad a la que se enfrentan. <br>¿Qué pasaría si no hay otra opción que tomar un colectivo desde la vereda y no es posible para el chofer acercarse al cordón? <br>¿O una calle no tiene rampa en sus equinas o las que tiene están rotas? <br>¿Cómo puede hacer una persona en silla de ruedas en esos casos?. <br><br>Estas con cuestiones que como sociedad deberíamos considerarlas para actuar en consecuencia y asegurar que todo, desde transporte, calles, accesos a lugares sean accesibles para todos."
+    
     document.getElementById("boton_op1_juego_rodando").innerHTML =
     "Muchas gracias"
-
+    
     document.getElementById("boton_op2_juego_rodando").innerHTML =
     "Muchas gracias"
+
+    document.getElementById("boton_op1_juego_rodando").removeEventListener("click", pag_restaurante_ir_a_casa)    
+    document.getElementById("boton_op2_juego_rodando").removeEventListener("click", pag_restaurante_ir_a_casa)
 }
