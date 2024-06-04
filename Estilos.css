@@ -58,7 +58,7 @@ body {
 }
 
 #fondo_header_footer{
-    background-color: rgb(146, 32, 32);
+    background-color: rgb(34, 24, 126);
 }
 
 #menu{
@@ -86,6 +86,11 @@ body {
     margin-bottom: 10px;
 }
 
+.imagenes_integrantes{
+    width: 60%;
+    height: 80%;
+}
+
 /* Home */
 .diapositiva {
     width: 400px;
@@ -94,7 +99,7 @@ body {
 }
 
 .rectangulo-bordes {
-    background: rgb(146, 32, 32);
+    background: rgb(34, 24, 126);
 }
 
 /* Texto Segundo Parcial */
