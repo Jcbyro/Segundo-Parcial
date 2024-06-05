@@ -108,7 +108,7 @@
                     <div class="titulo">
                         <p>Segundo Parcial</p>
                     </div>
-
+                    
                     <!-- Botones -->
                     <div class="group home">
                         <div class="rectangle-home"></div>
@@ -139,44 +139,46 @@
                     </div>
 
                     <!-- Juego -->
-                <main>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 col-sm-12 col-lg-12" id="titulo-ciego">
-                                <h2>El dia de una persona ciega</h2>
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-lg-12" id="titulo-ciego">
-                                <h2 id="puntaje-ciego"></h2>
-                            </div>
-                            <div class="col-md-6 col-sm-6 col-lg-6 " id="juego_ciego_cuerpo">
-                                <p id="texto-ciego"></p> 
-                            </div>
+                    <main>
+                        <div class="container">
+                            <div class="row">
+                                <div id="titulo-ciego">
+                                    <h2>El dia de una persona ciega</h2>
+                                </div>
+                                <div id="titulo-ciego">
+                                    <h2 id="puntaje-ciego"></h2>
+                                </div>
+                                <div id="juego_ciego_cuerpo">
+                                    <p id="texto-ciego"></p> 
+                                </div>
+                                <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-                            <div class="col-md-6 col-sm-6 col-lg-6">
-                                <ul class="nav nav-pills nav-fill">
-                                    <li class="nav-item">
-                                        <a href="#"><button id="opc1-ciego" class="btn btn-outline-dark"><h4>5:30am</h4></button></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#"><button id="opc2-ciego" class="btn btn-outline-dark"><h4>6:00am</h4></button></a>
-                                    </li>
-                                </ul>
+                                <div class="col-md-6 col-sm-6 col-lg-6">
+                                    <ul class="nav nav-pills nav-fill">
+                                        <li class="nav-item">
+                                            <a href="#"><button id="opc1-ciego" style="margin-bottom: 10px;" class="btn btn-outline-dark"><h4>5:30am</h4></button></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#"><button id="opc2-ciego" style="margin-bottom: 10px;" class="btn btn-outline-dark"><h4>6:00am</h4></button></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </div> 
-                </main>
+                        </div> 
+                    </main>
 
-                <script>
-                    document.getElementById("texto-ciego").innerHTML =
-                    "<h3>¡Bienvenidos!</h3><br> En este juego simularemos un día en la vida de una persona ciega donde se deberán tomar decisiones sobre acciones cotidianas y se dará puntaje acorde a la opción seleccionada. <br><br><h3> Comenzamos </h3><br> Es lunes por la mañana, trabajas en una escuela y tu horario es de 7am a 12 pm. Para llegar allí, utilizas el transporte público, el recorrido suele durar 1 hr, pero te tardas 15 min en llegar al transporte. Debes decidir si despertarte temprano para evitar la hora pico o despertarte un poco mas tarde para llegar a tiempo; los horarios son:"
+                    <script>
+                        document.getElementById("texto-ciego").innerHTML =
+                        "<h3>¡Bienvenidos!</h3><br> En este juego simularemos un día en la vida de una persona ciega donde se deberán tomar decisiones sobre acciones cotidianas y se dará puntaje acorde a la opción seleccionada. <br><br><h3> Comenzamos </h3><br> Es lunes por la mañana, trabajas en una escuela y tu horario es de 7am a 12 pm. Para llegar allí, utilizas el transporte público, el recorrido suele durar 1 hr, pero te tardas 15 min en llegar al transporte. Debes decidir si despertarte temprano para evitar la hora pico o despertarte un poco mas tarde para llegar a tiempo; los horarios son:"
+    
+                        var puntaje = 0;
+                        document.getElementById("puntaje-ciego").innerHTML =
+                        "Tu puntaje es: " + puntaje;
+    
+                        document.getElementById("opc1-ciego").addEventListener("click", dic_530am)
+                        document.getElementById("opc2-ciego").addEventListener("click", dic_6am)
+                    </script>
 
-                    var puntaje = 0;
-                    document.getElementById("puntaje-ciego").innerHTML =
-                    "Tu puntaje es: " + puntaje;
-
-                    document.getElementById("opc1-ciego").addEventListener("click", dic_530am)
-                    document.getElementById("opc2-ciego").addEventListener("click", dic_6am)
-                </script>
 
                     <!-- Footer -->
                     <div class="footer">
