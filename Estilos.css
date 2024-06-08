@@ -2,6 +2,11 @@
     width: 100%;
     text-align: center;
 }
+  
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
 
 /* Estilos para pantallas de computadora */
 @media (min-width: 768px) {
@@ -47,6 +52,8 @@ body {
     align-items: center;
     width: 100vw;
     min-height: 100vh;
+    background-color: white;
+    color: black;
 }
 
 .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
@@ -58,7 +65,7 @@ body {
 }
 
 #fondo_header_footer{
-    background-color: #922016;
+    background-color: rgb(34, 24, 126);
 }
 
 #menu{
@@ -99,7 +106,7 @@ body {
 }
 
 .rectangulo-bordes {
-    background: #922016;
+    background: rgb(34, 24, 126);
 }
 
 /* Texto Segundo Parcial */
