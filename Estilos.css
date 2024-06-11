@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+#botones_menu{
+    font-size: 25px;
+    font-weight: bold;
+}
+
 #botones_menu_seleccionado{
     font-size: 25px;
     font-weight: bold;
@@ -17,7 +22,7 @@
 .dark-mode {
     background-color: black;
     color: white;   
-}
+  }
 
 /* Estilos para pantallas de computadora */
 @media (min-width: 768px) {
@@ -332,23 +337,7 @@ body {
 .group-link-SP {
     position: absolute;
     left: 122px;
-    top: 470px;
-    width: 157px;
-    height: 38px;
-}
-
-.group-link-SP-A {
-    position: absolute;
-    left: 20px;
-    top: 470px;
-    width: 157px;
-    height: 38px;
-}
-
-.group-link-SP-B {
-    position: absolute;
-    left: 220px;
-    top: 470px;
+    top: 461px;
     width: 157px;
     height: 38px;
 }
