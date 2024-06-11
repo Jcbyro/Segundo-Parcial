@@ -2,11 +2,27 @@
     width: 100%;
     text-align: center;
 }
-  
+
+#botones_menu{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#botones_menu_seleccionado{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+#boton_dark_mode{
+    color: rgb(34, 24, 126);
+    font-weight: bold;
+}
+
 .dark-mode {
     background-color: black;
-    color: white;
-  }
+    color: white;   
+}
 
 /* Estilos para pantallas de computadora */
 @media (min-width: 768px) {
@@ -44,6 +60,11 @@ html, body {
     padding: 0;
     min-height: 100%;
     min-width: 100%;
+}
+
+body.night-mode {
+    background-color: #121212;
+    color: white;
 }
 
 body {
