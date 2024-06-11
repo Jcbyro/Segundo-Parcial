@@ -25,24 +25,24 @@
                     <div class="container" id="menu">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-lg-12">
-                                <button id="boton_dark_mode" class="btn btn-outline-dark" style="margin-bottom: 10px;">Activar modo oscuro</button>
+                                <button class="btn btn-outline-dark" style="margin-bottom: 10px;" id="boton_dark_mode">Activar modo oscuro</button>
                             </div>
                             <div class="col-md-12 col-sm-12 col-lg-12">
                                 <ul class="nav nav-pills nav-fill">
                                     <li class="nav-item">
-                                        <a id="botones_menu" href="index.html"> Home </a>
+                                        <a href="index.html"><button class="btn btn-outline-dark"><h3> Home </h3></button></a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a id="botones_menu" href="Integrantes.html"> Integrantes </a>
+                                        <a href="Integrantes.html"><button class="btn btn-outline-dark"><h3> Integrantes </h3></button></a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a id="botones_menu" href="Avances.html"> Avances </a>
+                                        <a href="Avances.html"><button class="btn btn-outline-dark"><h3> Avances </h3></button></a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a id="botones_menu_seleccionado" href="Juegos.html"> Juegos </a>
+                                        <a href=""><button class="btn btn-dark"><h3> Juegos </h3></button></a>
                                     </li>
                                 </ul>
                             </div>
@@ -53,23 +53,24 @@
                 <main>  
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 col-sm-12 col-lg-6" style="margin-top: 30px;">
-                                <div> <h4> Juego I</h4></div>
-                                <div> <p> <strong>Un dia Rodando </strong></p></div>
-                                <div> <p> <strong>Descripción: </strong> El Juego trata de simular un día de una persona en silla de ruedas y tomar decisiones desde una perspectiva distinta. </p></div>
-                                <div> <p> <strong>Autor: </strong> Diego Barchiesi</p></div>
-                                <div> <p> <strong>Link: </strong> <a href='https://djbarchiesi.github.io/JuegoRodando/'> Un dia Rodando</a></p></div>
-                                <div> <p> <strong>Repositorio: </strong> <a href='https://github.com/DJBarchiesi/JuegoRodando' target='_blank'> Repositorio Un dia Rodando</a> </p></div>
-                                <div> <p> <strong>Preguntas Frecuentes: </strong> <a href='Juego-Rodando-Preguntas.html'> Preguntas Un dia Rodando</a> </p></div>                                
+                            <div class="col-md-6 col-sm-6 col-lg-6 nav justify-content-center">
+                                <div class="card" id="tarjetas_juegos" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Un dia Rodando </h5>
+                                        <p class="card-text"> El Juego trata de simular un día de una persona en silla de ruedas y tomar decisiones desde una perspectiva distinta. </p>
+                                        <a href='https://djbarchiesi.github.io/JuegoRodando/' target='_blank'>Link Juego</a>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="col-md-6 col-sm-12 col-lg-6" style="margin-top: 30px;">
-                                <div> <h4> Juego II</h4></div>
-                                <div> <p> <strong>Explorando la ciudad como un ciego </strong></p></div>
-                                <div> <p> <strong>Descripción: </strong> El jugador explora una ciudad virtual a través de descripciones de texto. </p></div>
-                                <div> <p> <strong>Autor: </strong> Juan Byro</p></div>
-                                <div> <p> <strong>Link: </strong> <a href='https://jcbyro.github.io/Juego-Ciego/'> Explorando la ciudad</a></p></div>
-                                <div> <p> <strong>Repositorio: </strong> <a href='https://github.com/Jcbyro/Juego-Ciego' target="_blank"> Repositorio Explorando la ciudad</a> </p></div>
+                            <div class="col-md-6 col-sm-6 col-lg-6 nav justify-content-center">
+                                <div class="card" id="tarjetas_juegos" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Explorando la ciudad como un ciego</h5>
+                                        <p class="card-text">El jugador explora una ciudad virtual a través de descripciones de texto.</p>
+                                        <a href='https://jcbyro.github.io/Juego-Ciego/' target='_blank' class="card-link"> Link Juego </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div> 

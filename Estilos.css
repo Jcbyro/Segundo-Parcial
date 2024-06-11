@@ -3,11 +3,6 @@
     text-align: center;
 }
 
-#botones_menu{
-    font-size: 25px;
-    font-weight: bold;
-}
-
 #botones_menu_seleccionado{
     font-size: 25px;
     font-weight: bold;
@@ -337,7 +332,23 @@ body {
 .group-link-SP {
     position: absolute;
     left: 122px;
-    top: 461px;
+    top: 470px;
+    width: 157px;
+    height: 38px;
+}
+
+.group-link-SP-A {
+    position: absolute;
+    left: 20px;
+    top: 470px;
+    width: 157px;
+    height: 38px;
+}
+
+.group-link-SP-B {
+    position: absolute;
+    left: 220px;
+    top: 470px;
     width: 157px;
     height: 38px;
 }
