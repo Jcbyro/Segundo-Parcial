@@ -342,6 +342,22 @@ body {
     height: 38px;
 }
 
+.group-link-SP-A {
+    position: absolute;
+    left: 20px;
+    top: 470px;
+    width: 157px;
+    height: 38px;
+}
+
+.group-link-SP-B {
+    position: absolute;
+    left: 220px;
+    top: 470px;
+    width: 157px;
+    height: 38px;
+}
+
 .shape-link-SP {
     position: absolute;
     width: 100%;
