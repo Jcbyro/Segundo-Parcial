@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.card{
+    margin: 15px
+}
+
 #botones_menu{
     font-size: 25px;
     font-weight: bold;
@@ -17,12 +21,13 @@
 #boton_dark_mode{
     color: rgb(34, 24, 126);
     font-weight: bold;
+    background-color: white;
 }
 
 .dark-mode {
     background-color: black;
     color: white;   
-  }
+}
 
 /* Estilos para pantallas de computadora */
 @media (min-width: 768px) {
@@ -87,6 +92,7 @@ body {
 
 #fondo_header_footer{
     background-color: rgb(34, 24, 126);
+    color: #fff !important;
 }
 
 #menu{
