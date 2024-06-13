@@ -27,7 +27,7 @@
 .dark-mode {
     background-color: black;
     color: white;   
-}
+  }
 
 /* Estilos para pantallas de computadora */
 @media (min-width: 768px) {
@@ -79,7 +79,6 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: white;
-    color: black;
 }
 
 .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
