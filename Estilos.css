@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.card{
+    margin: 15px
+}
+
 #botones_menu{
     font-size: 25px;
     font-weight: bold;
@@ -17,34 +21,12 @@
 #boton_dark_mode{
     color: rgb(34, 24, 126);
     font-weight: bold;
+    background-color: white;
 }
 
 .dark-mode {
     background-color: black;
-    color: white;   
-  }
-
-/* Estilos para pantallas de computadora */
-@media (min-width: 768px) {
-    /* Mostrar el HTML de Compu */
-    .Computadora {
-        display: block;
-    }
-    /* Ocultar el HTML de Celu */
-    .Celular {
-        display: none;
-    }
-}
-/* Estilos para pantallas de celular */
-@media (max-width: 767px) {
-    /* Mostrar el HTML de Celu */
-    .Celular {
-        display: block;
-    }
-    /* Ocultar el HTML de Compu */
-    .Computadora {
-        display: none;
-    }
+    color: white;
 }
 
 @font-face {
@@ -74,7 +56,6 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: white;
-    color: black;
 }
 
 .text-node { background-clip: text !important; -webkit-background-clip: text !important; }
@@ -87,6 +68,7 @@ body {
 
 #fondo_header_footer{
     background-color: rgb(34, 24, 126);
+    color: #fff !important;
 }
 
 #menu{
