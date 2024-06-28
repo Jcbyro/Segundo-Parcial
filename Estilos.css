@@ -92,6 +92,7 @@ body {
 #fondo_header_footer{
     background-color: rgb(34, 24, 126);
     color: #fff !important;
+    font-family: "sourcesanspro";
 }
 
 #menu{
