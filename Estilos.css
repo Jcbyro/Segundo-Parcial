@@ -143,7 +143,7 @@ body {
     height: 65px;
     font-size: 40px;
     font-family: "sourcesanspro";
-    color: black;
+    color: white;
 }
 
 /* UADE */
@@ -158,7 +158,7 @@ body {
 /* Nombre de la materia - Nro de grupo - Cruso */
 .texto-home {
     position: absolute;
-    left: 110px;
+    left: 20px;
     top: 311px;
     display: flex;
     font-size: 18px;
@@ -220,20 +220,19 @@ body {
 /* Derechos reservados - Sitio desarrollado para uso educativo - Diseño y desarrollo Web - UADE - 2024 */
 .footer {
     position: absolute;
-    left: 0px;
-    top: 667px;
+    top: 680px;
     width: 400px;
-    height: 99px;
+    height: 100px;
 }
 
 .texto_final {
     position: absolute;
     left: 16px;
-    top: 14px;
+    top: 20px;
     font-size: 20px;
     line-height: 1.2;
     text-align: start;
-    color: black;
+    color: white;
     font-family: "sourcesanspro";
 }
 
