@@ -27,7 +27,7 @@
 .dark-mode {
     background-color: black;
     color: white;   
-  }
+}
 
 /* Estilos para pantallas de computadora */
 @media (min-width: 768px) {
